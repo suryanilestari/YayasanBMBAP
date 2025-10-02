@@ -25,18 +25,33 @@
     </ul>
   </nav>
 
-  <section class="kontak">
+ <div class="contact-section">
     <h2>Hubungi Kami</h2>
     <p><i class="fa-solid fa-location-dot"></i> Perum Bumi Asri Majalaya, Jalan Desa Tangsimekar Blok E14 RT 02 RW 10, Desa Tangsimekar, Kecamatan Paseh</p>
     <p><i class="fa-solid fa-envelope"></i> <a href="mailto:baktimuliabumiasripeduli@gmail.com">baktimuliabumiasripeduli@gmail.com</a></p>
     <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/6281320625283" target="_blank">+62 813-2062-5283</a></p>
     <p><i class="fa-solid fa-phone"></i> <a href="tel:+6281320625283">+62 813-2062-5283</a></p>
-    <p><i class="fa-solid fa-university"></i>Rekening: BJB <a href="0153059594100">0153059594100</a></p>
-    <p>a.n. YYSN BAKTI MULIA BUMI ASRI PEDULI</p>
-  
-  </section>
+</div>
 
- <footer>
+<hr>
+
+<div class="donation-section">
+    <h2>Mari Berdonasi</h2>
+    <p><i class="fas fa-university"></i> Bank BJB</p>
+    <p><b>No. Rekening: 0153059594100</b></p>
+    <p>a.n. <b>YYSN BAKTI MULIA BUMI ASRI PEDULI</b></p>
+    
+    <button class="copy-btn" onclick="copyRekening()">Salin Nomor Rekening</button>
+</div>
+
+<script>
+function copyRekening() {
+    navigator.clipboard.writeText("0153059594100");
+    alert("Nomor rekening berhasil disalin!");
+}
+</script>
+
+<footer>
     <p>©2025 Yayasan Bakti Mulia Bumi Asri Peduli</p>
     <div class="social-icons">
     <a href="https://facebook.com/baktimuliabumiasripeduli" target="_blank"><i class="fab fa-facebook"></i></a>
@@ -46,4 +61,3 @@
   </footer>
 </body>
 </html>
-
