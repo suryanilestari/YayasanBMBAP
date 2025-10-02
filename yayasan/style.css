@@ -1,4 +1,4 @@
-/* ================= RESET ================= */
+/*  RESET */
 * {
   margin: 0;
   padding: 0;
@@ -14,11 +14,11 @@ body {
   color: #000;
 }
 
-/* ================= HEADER ================= */
+
 /* HEADER */
 .header {
   display: flex;
-  flex-direction: column; /* default: stack atas-bawah */
+  flex-direction: column; 
   align-items: center;
   justify-content: center;
   padding: 20px;
@@ -38,7 +38,7 @@ body {
   font-weight: bold;
 }
 
-/* ================= NAVBAR ================= */
+/* NAVBAR  */
 .navbar {
   background: #1a5d1a;
   padding: 10px 0;
@@ -64,7 +64,7 @@ body {
   color: #ffd700;
 }
 
-/* ================= ABOUT SECTION ================= */
+/* ABOUT SECTION */
 .about {
   max-width: 800px;
   margin: 50px auto;
@@ -89,7 +89,7 @@ body {
   margin-bottom: 18px;
 }
 
-/* ================= SECTION ================= */
+/*  SECTION  */
 section {
   padding: 60px 50px;
 }
@@ -101,7 +101,7 @@ section h2 {
   padding-left: 10px;
 }
 
-/* ================= GALERI ================= */
+/* GALERI*/
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -135,7 +135,7 @@ section h2 {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* ================= DOKUMEN ================= */
+/* DOKUMEN */
 .dokumen {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -168,7 +168,7 @@ section h2 {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* ================= FOOTER ================= */
+/*  FOOTER */
 footer {
   background: #1a5d1a;
   color: #fff;
@@ -192,7 +192,7 @@ footer .social-icons a:hover {
   color: #ffd700;
 }
 
-/* ================= RESPONSIVE ================= */
+/* RESPONSIVE  */
 @media (max-width: 768px) {
   .gallery,
   .dokumen {
@@ -231,63 +231,6 @@ footer .social-icons a:hover {
   0%   { transform: translateX(0); }
   100% { transform: translateX(-100%); }
 }
-/* ================= KONTAK ================= */
-.kontak {
-  padding: 30px 20px;
-  text-align: left;
-  max-width: 800px;
-  margin: auto;
-}
-
-.kontak h2 {
-  text-align: center;
-  font-size: 1.8em;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.kontak p {
-  font-size: 1em;
-  margin: 12px 0;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: #444;
-}
-
-.kontak a {
-  color: #0066cc;
-  text-decoration: none;
-}
-
-.kontak a:hover {
-  text-decoration: underline;
-}
-
-/* Icon Font Awesome */
-.kontak i {
-  font-size: 1.2em;
-  color: #2a2a2a;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  .kontak {
-    padding: 20px 15px;
-  }
-  
-  .kontak h2 {
-    font-size: 1.5em;
-  }
-
-  .kontak p {
-    font-size: 0.95em;
-  }
-
-  .kontak i {
-    font-size: 1em;
-  }
-}
 
 
 .running-slider {
@@ -299,12 +242,12 @@ footer .social-icons a:hover {
 
   .slider-track {
     display: flex;
-    width: calc(250px * 10); /* jumlah gambar * ukuran */
+    width: calc(250px * 10); 
     animation: scroll 40s linear infinite;
   }
 
   .slider-track img {
-    width: 250px;   /* ukuran tiap gambar */
+    width: 250px;   
     height: 180px;
     object-fit: cover;
     margin: 0 10px;
@@ -317,4 +260,68 @@ footer .social-icons a:hover {
     100% { transform: translateX(calc(-250px * 5)); } /* geser sejauh setengah isi (5 gambar pertama) */
   }
 
-  
+  /* Kontak */
+.contact-section, .donation-section {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contact-section h2, .donation-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-left: 5px solid #008000;
+    padding-left: 10px;
+}
+
+/* Hubungi Kami */
+.contact-section {
+    background: #ffffff;
+    border: 1px solid #ddd;
+}
+
+.contact-section h2 {
+    color: #005f2f;
+}
+
+.contact-section p {
+    font-size: 16px;
+    margin: 8px 0;
+    color: #333;
+}
+
+/* Mari Berdonasi */
+.donation-section {
+    background: #f0fff4; 
+    border: 2px solid #008000;
+    text-align: center;
+}
+
+.donation-section h2 {
+    color: #006400;
+}
+
+.donation-section p {
+    font-size: 18px;
+    margin: 6px 0;
+    color: #222;
+}
+
+/* Tombol Salin Rekening */
+.copy-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #008000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.copy-btn:hover {
+    background: #006400;
+}
