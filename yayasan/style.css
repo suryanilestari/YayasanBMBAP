@@ -273,3 +273,30 @@ footer {
     font-size: 1em;
   }
 }
+
+.running-slider {
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+    padding: 20px 0;
+  }
+
+  .slider-track {
+    display: flex;
+    width: calc(250px * 10); /* jumlah gambar * ukuran */
+    animation: scroll 40s linear infinite;
+  }
+
+  .slider-track img {
+    width: 250px;   /* ukuran tiap gambar */
+    height: 180px;
+    object-fit: cover;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-250px * 5)); } /* geser sejauh setengah isi (5 gambar pertama) */
+  }
